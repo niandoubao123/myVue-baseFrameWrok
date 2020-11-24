@@ -1,0 +1,77 @@
+<template>
+    <div>
+        <!-- 订单遍历 -->
+        <section class="aui-myOrder-content" v-if="$store.state.people.code==0">
+            <h1 style="text-align:center;font-size:15px;color:#8e8e8e">还没登录哦~</h1>
+            <youlike></youlike>
+        </section>
+        <div v-for="(item,index) in lists" :key="index" >
+            <van-panel 
+            :title="'订单：'+item.orderId" 
+            :status="typeList[item.type]"
+            v-if="item.type == 1"
+            >
+                <!-- 商品遍历 -->
+                <div v-for="(value,key) in item.goodsList" :key="key">
+                    <van-card
+                    :num="value.num"
+                    :price="value.price"
+                    desc="描述信息"
+                    :title="value.name"
+                    thumb="https://img.yzcdn.cn/vant/ipad.jpeg"
+                    />
+                </div>
+                <h1 style="float:left;margin-left:20px;color:#f50;width:150px;height:50px;line-height:50px;">总金额：￥{{item.sumMoney}}</h1>
+                <!-- 待支付 -->
+                <div v-if="item.type == 1" slot="footer" class="van-panel-footer">
+                    <van-button size="small" type="danger" @click="del(index)" >删除订单</van-button>
+                    <van-button size="small" type="primary"  @click="onPay(item.orderId)" >支付订单</van-button>
+                </div>
+            </van-panel>
+        </div>
+    </div>
+</template>
+
+<script>
+import youlike from '../indexPage/youLike'
+    export default {
+        data(){
+            return {
+                lists:[],
+                typeList:[]
+            }
+        },
+        methods:{  
+            onPay(orderId){
+                let index = this.lists.findIndex(item=>item.orderId == orderId);
+                this.lists[index].type = 2; //切换支付后待收货。调用支付接口
+            },
+            del(index){
+                // 修改数据状态，改为：6
+                this.lists[index].type = 6;
+            }
+        },
+        components:{
+            youlike
+        },
+        created(){
+            this.typeList = this.$store.state.order.typeList;
+            let dataList = this.$store.state.order.orderList;
+            this.lists = dataList.filter(item=>item.type == 1);
+        },
+        // 在组件销毁之前，
+        // 把当前列表数据同步vuex数据中。
+        beforeDestroy() {
+            if(this.lists.length){
+                this.$store.commit("order/editId",this.lists);
+            }
+        },
+    }
+</script>
+
+<style lang="scss" scoped>
+    .van-panel-footer{
+        text-align: right;
+    }
+
+</style>

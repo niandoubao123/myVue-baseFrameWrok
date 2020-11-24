@@ -1,0 +1,394 @@
+{
+  "ControType.OnlineInfo": {
+    "All": "所有车辆",
+    "Offline": "离线",
+    "Online": "在线"
+  },
+  "ControType.OpenInfo": {
+    "All": "所有类型",
+    "NotOpen": "不放行",
+    "Open": "放行"
+  },
+  "SystemCmdType": {},
+  "ParkingOrderStatus": {
+    "Payed": "支付完成",
+    "Ing": "进行中",
+    "Finish": "已经完成",
+    "Feeing": "待支付"
+  },
+  "ControType.ControlSn": {},
+  "AreaType": {
+    "Inside": "场内",
+    "Outside": "场外"
+  },
+  "TradeType": {
+    "NATIVE": "扫码",
+    "JSAPI": "公众号/小程序/H5"
+  },
+  "OperatorType": {
+    "add": "添加",
+    "upadate": "更新",
+    "delete": "删除"
+  },
+  "ControType.PayInfo": {
+    "All": "所有类型",
+    "No": "不需显示支付",
+    "Yes": "需显示支付"
+  },
+  "PricingFullFreeType": {
+    "none": "计费规则-没有满免",
+    "singleCount": "计费规则-单次满免",
+    "summation": "计费规则-累加至最高收费后满免"
+  },
+  "ControType.TextType": {
+    "CarFee": "车辆计费类型",
+    "DayRemaining": "剩余天数",
+    "QRCode": "二维码",
+    "ParkingFee": "停车费用",
+    "TempPlate": "临时车牌",
+    "Time": "当前时间",
+    "ParkingTime": "停车时长",
+    "NormalText": "普通文本",
+    "Plate": "是否车牌"
+  },
+  "PricingParagraphClassType": {
+    "workingDay": "工作日",
+    "nonWorkingDay": "非工作日"
+  },
+  "PricingPlanTemplate": {
+    "ChargeStandardThree": "昼夜内分首/非首段计费",
+    "ChargeStandardSix": "分首/非首段计费",
+    "Charging24Hours": "标准24小时计费方案",
+    "ChargeStandardOne": "分多段计费",
+    "ChargeStandardTwo": "昼夜计费",
+    "ChargeStandardFive": "深圳商业费率",
+    "ChargeStandardFour": "循环分首段/非首段计费",
+    "ChargeBeijing":"北京费率",
+    "ChargeYanTai":"烟台费率",
+    "ChargeOfflineSimple":"离线费率",
+    "ChargeRentOverTime":"时租超时费率"
+  },
+  "PlateType": {
+    "normalPlate": "正常车牌",
+    "tempPlate": "临时车牌"
+  },
+  "CouponUsable": {
+    "NOUSE": "不可用",
+    "CANUSE": "可用"
+  },
+  "MchType": {
+    "Master": "厂家",
+    "Proxy": "代理经销商",
+    "EndUser": "物业"
+  },
+  "MchTypes": {
+    "Master": "厂家",
+    "Proxy": "代理经销商",
+    "EndUser": "物业",
+    "Merchant": "商家"
+  },
+  "PricingResultType": {
+    "Temp": "临时车结算",
+    "NotRule": "没有设置免费规则",
+    "TempPendingOrPrePay2ZeroPay": "由于挂单额度，需支付=0，所以放行",
+    "Temp2ZeroPay": "临时车结算，需支付=0，所以放行",
+    "TempMonthRental": "多车多位结算",
+    "Free": "免费规则命中",
+    "TempCoupon2ZeroPay": "扣除优惠后，需支付=0，所以放行",
+    "MonthRental": "月租结算",
+    "Debug": "测试故意设定"
+  },
+  "CanUseType": {
+    "Can": "可以",
+    "Cannot": "不可以"
+  },
+  "HasTurnover": {
+    "HAS": "有",
+    "NONE": "无"
+  },
+  "InOutType": {
+    "In": "入",
+    "Out": "出",
+    "InArea":"换区"
+  },
+  "PricingParagraphSplitType": {
+    "duration": "停留时长-按持续停留时长分段（单位分钟）",
+    "nosubsection": "没有分段-可用按天收费-按天收费时没有分段概念",
+    "timeSection": "时间区间-按时间区间分段（时和分）"
+  },
+  "PushType": {
+    "active": "主动(平台手动操作，或配置更新时主动推送)",
+    "passive": "被动(响应设备请求)"
+  },
+  "PayStatus": {
+    "Zero": "无需支付",
+    "Ing": "进行中",
+    "FinishButRefund": "已经退款",
+    "NoYet": "未开始支付",
+    "Cannel": "已经取消",
+    "Finish": "已经完成"
+  },
+  "PayTimeType": {
+    "OutParkingPay": "出场支付",
+    "PrePay": "预支付"
+  },
+  "PassRuleType": {
+    "offline": "离线规则",
+    "online": "在线规则"
+  },
+  "CashType": {
+    "CNY": "RMB"
+  },
+  "ControType.PlateInfo": {
+    "All": "所有车辆",
+    "OK": "车牌号正常",
+    "NoPlate": "无车牌"
+  },
+  "SchedulerType": {
+    "updateCarInfo": "更新固定车辆信息",
+    "updateDisplayConfig": "更新显示配置后，推送设备消息"
+  },
+  "PricingPlanType": {
+    "hourCharge": "按时计费",
+    "dayChargeCount": "按天计费（即按次收费）"
+  },
+  "CarGroupType": {
+    "Temp": "临时车",
+    "MonthlyRental": "月租车",
+    "HourRental":"时租车",
+    "Custom":"自定义车组"
+  },
+  "SelectedType": {
+    "Select": "选择",
+    "NotSelect": "未选择"
+  },
+  "ShowCmdNameType": {},
+  "ControType.CarAction": {
+    "WaitForPay": "待支付",
+    "Enter": "试图入场",
+    "EnterSuccess": "入场成功",
+    "ChangeArea": "换区",
+    "ExitSuccess": "出场成功",
+    "Exit": "试图出场"
+  },
+  "DeviceType": {
+    "Fx2": "费显2.0",
+    "Fx1": "费显1.0"
+  },
+  "DeviceStatusType": {
+    "offline": "离线",
+    "diffTime": "时间不一致(在线)",
+    "online": "在线",
+    "greaterTime": "设备时间大于服务器时间"
+  },
+  "BillCheckType": {
+    "CheckByDownload": "对账时校对",
+    "CheckByQuery": "查单时校对"
+  },
+  "ControType.CarFee": {
+    "Whiltelist": "白名单",
+    "All": "所有类型",
+    "Temp": "临时",
+    "MonthlyRentalOrFree": "月租或免费",
+    "MonthlyRental": "月租",
+    "Blacklist": "黑名单",
+    "Free": "免费"
+  },
+  "OnOffType": {
+    "off": "关闭",
+    "on": "开启"
+  },
+  "OpenGateType": {
+    "Close": "不开闸",
+    "Open": "开闸"
+  },
+  "CarColorType": {
+    "1": "Blue",
+    "2": "Yellow",
+    "3": "Black",
+    "4": "White",
+    "5": "Green"
+  },
+  "ParkingOrderFinishType": {
+    "EndByHuman": "强制结单",
+    "EndByHand": "免费放行",
+    "InParkingAgain": "再入场时结单",
+    "CashPay": "现金支付",
+    "MonthlyRentalTimeOut": "月租自动重入场",
+    "ZeroPay": "需支付金额=0",
+    "Normal": "正常支付结单",
+    "Exception": "异常情况"
+  },
+  "ParkingOrderFinishReason":{
+    "正常结单": "通过支付出场",
+    "费用为0开闸": "计费为0(包括优惠券情况)，直接放行的订单",
+    "再入场时结单": "该车入场时，系统发现有订单没有被完成",
+    "已收现金开闸": "管理员收现金后手动放行",
+    "找不到入场订单-开闸": "该车出场时，系统发现没有对应入场记录，而放行",
+    "重复入场，异常结单": "该车入场时，系统发现有订单没有被完成",
+    "月租出场结单": "月租车出场正常结单",
+    "进入页面时，发现需缴费=0": "车组扫码后，系统发现无需支付，直接开闸",
+    "强制结单": "管理员在【在场车辆】页面进行强制出场操作",
+    "免费放行": "管理员在【实施情况】页面免费放行",
+    "时租超时计费":"时租车超时产生费用，正常结单"
+  },
+  "CouponSeleced": {
+    "SELECTED": "已选",
+    "UNSELECTED": "未选"
+  },
+  "ControType.CarGroupStatus": {
+    "All": "所有类型",
+    "NoPlatenumber": "无牌车",
+    "ExpiredSoon": "即将过期",
+    "ParkingLotFull": "停车场车位已满",
+    "Expired": "已经过期",
+    "CarGroupFull": "车组组内车车位已满",
+    "Normal": "正常"
+  },
+  "PrePayInfoStatus": {
+    "Record": "记录",
+    "Finish": "完成"
+  },
+  "CarFeeType": {
+    "Temp": "临时",
+    "MonthlyRental": "月租",
+    "HourRental":"时租车",
+    "Custom": "自定义车组"
+  },
+  "CarGroup":{
+    "MonthlyRental":"monthCar",
+    "Pending":"bookingCar",
+    "Free":"freeCar"
+  },
+  "CarColor": {
+    "1": "Blue",
+    "2": "Yellow",
+    "3": "Black",
+    "4": "White",
+    "5":"Green"
+  },
+  "CouponType": {
+    "FreeSheet": "免单",
+    "Discount": "折扣",
+    "FixedRelief": "定额",
+    "TimeDis": "时长"
+  },
+  "ResponseErrCode": {
+    "OK": 200,
+    "Redirect": 302,
+    "BusinessErr": 406,
+    "BusinessNoImpl": 407,
+    "SessionOut": 408,
+    "ParamErr": 400,
+    "AuthErr": 401,
+    "ServerErr": 500
+  },
+  "ChannelLastStatusType": {
+    "Ing": "进行中",
+    "Feeing": "支付中",
+    "Payed": "支付完成",
+    "Finish": "已经完成",
+    "WaitForConfirmIn": "入场待确认",
+    "RefuseIn": "拒绝入场",
+    "WaitForConfirmOut": "出场待确认",
+    "TimeOutFeeing": "支付中",
+    "ParkingOrderFinish": "单结束",
+    "ParkingOrderCreated": "单开始"
+  },
+  "SubUiEvt": {
+    "Ready2Pay": "待支付",
+    "PayFinished": "支付完成",
+    "RefreshChannel": "刷新通道",
+    "InParkingPending": "入场待确认",
+    "OutParkingPending": "出场待确认",
+    "Area2OtherPending": "过区待确认",
+    "ParkingOrderFinish": "单结束",
+    "ParkingOrderCreated": "单开始",
+    "RcChannelCtrl": "遥控事件"
+  },
+  "LastFixPlateType": {
+    "AI": "二次识别",
+    "Human": "手动纠正",
+    "Noyet": "未纠正",
+    "Doubt": "建议人工修正"
+  },
+  "PayTargetType": {
+    "ParkingOrder": "订单支付",
+    "PrePayOrder": "预缴订单",
+    "CarGroupOpen": "月租开通",
+    "CarGroupRenewal": "月租续费",
+    "DepositMerRenewal":"储值商家充值",
+    "HourRentCarGroupOpen":"时租车开通",
+    "HourRentCarGroupRenewal":"时租车续费"
+  },
+  "PayChannelType": {
+    "WX": "微信",
+    "ALI": "支付宝",
+    "CARD": "信用卡",
+    "Cash": "现金"
+  },
+  "ApiCRUDType": {
+    "C": "新建",
+    "R": "读取",
+    "U": "更新",
+    "D": "删除",
+    "Other": "其他",
+    "Ctrl_Gate": "道闸控制",
+    "Ctrl_Through": "放行",
+    "Ctrl_Order": "结单",
+    "Ctrl_PlateNumber": "车牌"
+  },
+  "ApiSrcType": {
+    "Web": "PC页",
+    "H5": "手机",
+    "Rc": "遥控"
+  },
+  "CarType":{
+    "白*******":"军警车",
+    "*******应急":"消防救援"
+  },
+  "MerchantType":{
+    "LaterPay":"后付费",
+    "MoneyDeposit":"金额储值商家",
+    "TimeDeposit":"时间储值商家"
+  },
+  "CycleType":{
+    "Unlimited":"无限制",
+    "EveryDay":"每日",
+    "EveryWeek":"每周",
+    "EveryMonth":"每月"
+  },
+  "DealType":{
+    "recharge":"充值",
+    "consume":"消费",
+    "recycle":"回收"
+  },
+  "CouponUseStatus":{
+    "USED":"已用完",
+    "OVERDUE":"已过期",
+    "USABLE":"可使用",
+    "ISCLOSE":"废弃",
+    "ISBIND":"已绑定"
+  },
+  "PrimaryEquipment":{
+    "primary":"主机",
+    "secondary":"辅机"
+  },
+  "carPassRemarkType":{
+    "Filtered":"被过滤",
+    "WaitBerthFull":"车位已满，待确认放行",
+    "WaitNoMatchRule":"不符合放行规则，待确认放行",
+    "WaitNoMatchIn":"找不到入场订单，待确认放行",
+    "ManualPassed":"被人工确认放行",
+    "NoInAutoPassed":"找不到入场订单，自动放行",
+    "ManualRefused":"被人工拒绝放行",
+    "AIFix":"被二次识别修改",
+    "ManualFix":"被人工修改",
+    "Order4CarPass":"过车关联订单",
+    "ShortInOutFiltered":"短时入出过滤",
+    "ShortOutInFiltered":"短时出入过滤",
+    "CenterForceOpen":"强制开闸",
+    "SimulationCapture":"模拟抓拍"
+
+  }
+}
