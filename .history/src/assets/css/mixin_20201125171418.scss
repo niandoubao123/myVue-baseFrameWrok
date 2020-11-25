@@ -1,0 +1,23 @@
+/*需要切换的颜色变量*/
+$color-primary1:red; /* 更换的颜色 */
+$color-primary2:orange; /* 更换的颜色 */
+$color-primary3:green; /* 更换的颜色 */
+$color-primary4:blue; /* 更换的颜色 */
+
+/*定义方法*/
+@mixin color_primary($color){
+    color:$color;
+    /*判断匹配*/
+    [data-theme="primary1"] & {
+        color:$color-primary1;
+    }
+    [data-theme="primary2"] & {
+        color:$color-primary2;
+    }
+    [data-theme="primary3"] & {
+        color:$color-primary3;
+    }
+    [data-theme="primary4"] & {
+        color:$color-primary4;
+    }
+}
