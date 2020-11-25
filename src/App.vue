@@ -20,6 +20,7 @@ export default {
     }
   },
   created(){
+    window.document.documentElement.setAttribute('data-theme', 'primary1');
     let datas=[
       {
         dictKey:'faleDataOne',

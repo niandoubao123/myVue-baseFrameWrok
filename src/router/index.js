@@ -14,7 +14,8 @@ Vue.use(VueRouter)
 const routes = [
    {
      path: "/",
-     redirect:'/doneTest'
+     redirect:'/selfWrite'
+    //  redirect:'/doneTest'
     //  redirect:'/shopCar'
    },
    ...other,
@@ -32,6 +33,11 @@ const routes = [
     path:"/doneTest",
     name:"首页",
     component:()=>import('../views/doneTest/index.vue')
+  },
+  {
+    path:"/selfWrite",
+    name:"首页",
+    component:()=>import('../views/selfWrite/index.vue')
   },
   {
     path: "/class",
