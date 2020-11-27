@@ -15,36 +15,20 @@
         </a>
     </header>
         <shopCarContent></shopCarContent>
-        <button @click="test">按钮</button>
+        <button @click="btn">按钮</button>
     </div>
 </template>
 
 <script>
 import shopCarContent from '../components/shopCarPage/shopCarContent'
+this.test()
     export default {
-        data(){
-            return {
-                shuju:{
-                    input:{
-                        value:{
-                            test:'123'
-                        }
-                    }
-                }
-            }
-        },
         components:{
             shopCarContent
         },
-        created(){
-            console.log(this)
-        },
         methods:{
           test(){
-              console.log(this)
-          },
-          hehehe1(){
-
+              console.log('测试')
           }
         }
     }

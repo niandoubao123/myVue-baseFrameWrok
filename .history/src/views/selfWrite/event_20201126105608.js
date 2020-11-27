@@ -6,7 +6,7 @@ export let life = {
 	// 	// this.methods('getData')
   // },
   mounted(){
-    // this.methods('getMounted')
+    this.methods('getMounted')
   }
 }
 export let event = {

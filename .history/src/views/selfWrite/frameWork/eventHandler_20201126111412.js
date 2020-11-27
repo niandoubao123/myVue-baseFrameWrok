@@ -11,7 +11,7 @@ export default function(event, life, watch, methodsSource) {
 	// 	// console.log(methodsSource[name]) //这样就拿到methods中的目标函数
 	// 	let func = methodsSource[name] || methodsSource.prototype[name] // 目标函数，methodsSource可能是字面量对象，也可以是类
 	// 	if (!func) throw new Error('找不到 methods：' + name)
-	// 	//把作用范围改为this  call和apply是一样的  没有这个就不知道methods中的this指向哪里
+	//	把作用范围改为this  call和apply是一样的  没有这个就不知道methods中的this指向哪里
 	// 	return func.apply(this, param)
 	// }
 	let eventContext
@@ -21,6 +21,20 @@ export default function(event, life, watch, methodsSource) {
 	E = changeEventContext.call(this, event, eventContext)
 	L = changeEventContext.call(this, life, eventContext)
 	W = changeEventContext.call(this, watch, eventContext)
+	//修改event内的上下文，event内只能调用methods  （此举做了个限制，不能调用自己event里面的方法）
+	for (let key in E) {
+		E[key] = function() {   //下面这步就将event里面的每个this.methods的methods指向了methods.js中的
+			let result = event[key].apply({methods: component.methods}, arguments)
+			return result
+		}
+	}
+	// 修改life内的上下文，life内只能调用methods  （此举做了个限制，不能调用自己event里面的方法）
+	for (let key in L) {
+		L[key] = function() {
+			let result = life[key].apply({methods: component.methods}, arguments)
+			return result
+		}
+	}
 	return {
 		E,
 		L,

@@ -16,9 +16,6 @@ export default {
   getMounted(){
 
   },
-  getTest(){
-
-  },
   async doTest(data){
     let isOk = false
     let timer

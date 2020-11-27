@@ -45,7 +45,6 @@
 		//event里面的东西实际上并没有和vue里面的click进行实质的关联
 		//例如：页面点击->去this里面找被挂到this上的event里面的方法->
 		//调用每个方法里面的this.methods(name)->这个方法又回去methods.js中匹配方法，操作数据（这里）
-		//model是在vmConfigHandler里面被整合到data里面，而vue就会像普通的vue一样把data里面的东西挂到this上
 		/* data() {
 			return modelJS.model
 		},

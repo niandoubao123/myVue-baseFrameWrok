@@ -1,6 +1,6 @@
 export default {
 	getData(){
-		// console.log(this)
+		console.log(this)
     // console.log(this.orderData.input.value.oneNumber)
     // this.http({
     //   cmd: '/TicketManage/SearchTicketCount',
@@ -14,9 +14,6 @@ export default {
     // })
   },
   getMounted(){
-
-  },
-  getTest(){
 
   },
   async doTest(data){

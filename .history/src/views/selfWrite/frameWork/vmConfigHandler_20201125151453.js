@@ -11,9 +11,6 @@ export default function(model, life, event, watch, methodsSource) {
 			let EL = eventHandler.call(this, E, L, watch || {}, methodsSource)
 			L = EL.L
 			W = EL.W
-			console.log('执行')
-			console.log(Object.assign(this, EL.E))
-			//把EL.E整合到this上
 			Object.assign(this, EL.E)
 			return model.model
 		},

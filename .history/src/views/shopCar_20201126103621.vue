@@ -22,29 +22,15 @@
 <script>
 import shopCarContent from '../components/shopCarPage/shopCarContent'
     export default {
-        data(){
-            return {
-                shuju:{
-                    input:{
-                        value:{
-                            test:'123'
-                        }
-                    }
-                }
-            }
-        },
         components:{
             shopCarContent
-        },
-        created(){
-            console.log(this)
         },
         methods:{
           test(){
               console.log(this)
           },
           hehehe1(){
-
+              
           }
         }
     }

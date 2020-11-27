@@ -21,6 +21,20 @@ export default function(event, life, watch, methodsSource) {
 	E = changeEventContext.call(this, event, eventContext)
 	L = changeEventContext.call(this, life, eventContext)
 	W = changeEventContext.call(this, watch, eventContext)
+	//修改event内的上下文，event内只能调用methods  （此举做了个限制，不能调用自己event里面的方法）
+	for (let key in E) {
+		E[key] = function() {   //下面这步就将event里面的每个this.methods的methods指向了methods.js中的
+			let result = event[key].apply({methods: component.methods}, arguments)
+			return result
+		}
+	}
+	// 修改life内的上下文，life内只能调用methods  （此举做了个限制，不能调用自己event里面的方法）
+	for (let key in L) {
+		L[key] = function() {
+			let result = life[key].apply({methods: component.methods}, arguments)
+			return result
+		}
+	}
 	return {
 		E,
 		L,

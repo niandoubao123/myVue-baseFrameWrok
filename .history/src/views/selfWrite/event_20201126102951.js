@@ -6,11 +6,11 @@ export let life = {
 	// 	// this.methods('getData')
   // },
   mounted(){
-    // this.methods('getMounted')
+    this.methods('getMounted')
   }
 }
 export let event = {
-	async hereEvent(val){
+	async here(val){
     console.log(val)
     let data ={
       name:'小明',
@@ -22,7 +22,7 @@ export let event = {
       console.log('异步')
     }
   },
-  hahaEvent(){
+  haha(){
     this.methods('haha')
   }
 }
